@@ -1,2 +1,5 @@
 note not all steps may be apparent due lack of need example image is not noise or thick enough and binarization step will not show as its effect is coding (make images pixel 0 or 255 only)
 so we provide example for all step on one go in other images that thoses steps to be apparent so that they complete each other to provide the full view (effect)
+not that invert step can be last and can be secand to last in both its valid, the only change is in color of the rescaling function for (255,255,255) if invert last one or there is no invert--
+and (0,0,0) if invert is secand to last
+
