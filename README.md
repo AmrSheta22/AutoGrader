@@ -11,7 +11,8 @@ Handwriting recognition involves converting handwritten text into machine-readab
 
 ### Handwriting Recognition Phases
 1. **Data Collection**: 
-   - We collect data from a variety of datasets to ensure a diverse and comprehensive training set.
+   - We collect data from IAM Handwriting Database 3.0 dataset to ensure comprehensive training.
+   - For testing we used two datasets which are: Egyptian Handwriting Dataset (EHD), and CVL Database.
 2. **Image Pre-Processing**: 
    - **Image Binarization**: Converts grayscale images to binary, enhancing feature extraction.
    - **Noise Removal**: Eliminates unwanted artifacts to improve image clarity.
