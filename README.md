@@ -19,7 +19,7 @@ Handwriting recognition involves converting handwritten text into machine-readab
    - **Deskewing**: Aligns handwritten text horizontally.
    - **Deslanting**: Corrects the slant in handwritten text.
    - **Rescaling**: Standardizes image dimensions.
-   - **Image Inversion**: Enhances feature contrast by inverting image colors (optional).
+   - **Image Inversion**: Enhances feature contrast by inverting image colors.
 3. **Evaluation Metrics**: 
    - We utilize standard metrics to evaluate the performance of our handwriting recognition models.
 4. **Models Training**: 
