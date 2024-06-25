@@ -47,16 +47,18 @@ ASAG involves grading handwritten or typed short answers automatically. Our appr
 1. **Data Collection**: 
    - Collecting datasets of short answers and including four columns (Question, Model Answer, Student Answer,and Grade).
    - We used datasets like: Mohler, PT-ASAG, and AR-ASAG for training and testing.
-2. **Data Pre-Processing**: 
+2. **Data Pre-Processing**:
+   - Exploratory Data Analysis
    - Cleaning and preparing the text data for analysis.
-3. **Data Analysis**: 
+   - Column Analysis
+4. **Data Analysis**: 
    - Extracting relevant features from the text and understanding patterns.
    - Analysis was divided into two types: Single Column Analysis and Relations between Columns Analysis.
-4. **Model Training**: 
+5. **Model Training**: 
    - Trying different pre-trained models that utilizes Semantic Similarity for grading like Knowledge-based models, Sentence Transformers, and BERT.
-5. **Model Optimization**: 
+6. **Model Optimization**: 
    - Adjusting model parameters to enhance grading accuracy.
-6. **Error Analysis**: 
+7. **Error Analysis**: 
    - Conducting thorough error analysis to identify areas for improvement.
 
 ## Website and Demo
