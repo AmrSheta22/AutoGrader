@@ -22,7 +22,17 @@ Handwriting recognition involves converting handwritten text into machine-readab
    - **Rescaling**: Standardizes image dimensions.
    - **Image Inversion**: Enhances feature contrast by inverting image colors.
 3. **Evaluation Metrics**: 
-   - We utilize standard metrics to evaluate the performance of our handwriting recognition models.
+  Our evaluation framework incorporates a range of metrics to assess the performance of our handwriting recognition models:
+   - Model Inference
+   - Test Data Preparation
+   - Comparison of Images
+   - Comparison of Labels
+   - Vector Inputs
+   - Generation of Predictions
+   - Decoding Predictions
+   - Comparison with Ground Truth
+   - Character Error Rate (CER)
+  
 4. **Models Training**: 
    - We used a pre-trained model which is Tr-OCR for training.
 5. **Model Optimization**: 
