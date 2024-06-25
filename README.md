@@ -90,8 +90,14 @@ To demonstrate the capabilities of our handwriting recognition and ASAG models, 
 #### 7) Admins view of the dashboard
 ![image](https://github.com/AmrSheta22/AutoGrader/assets/78879424/c439df1d-5d60-41ac-b399-f038ab27c134)
 
-## Files
-Here is a brief overview of the key files in this project:
+## Files and Folder Structure
+The project is organized into the following directories and files:
+
+- data: Contains the datasets used for training and evaluation.
+- handwriting_recognition/data_collection: Scripts and tools for collecting handwriting samples.
+- notebooks: Jupyter notebooks for experiments, model training, and evaluation.
+- scr: Source code for the project, including models, preprocessing scripts, and utilities.
+- README.md: This file, providing an overview of the project.
 
 ## Conclusion
 The development of advanced models for handwriting recognition and automatic short answer grading (ASAG) represents a significant step forward in educational technology. By meticulously collecting diverse datasets and employing sophisticated preprocessing techniques, our models achieve high accuracy and reliability. These models can revolutionize the way educational assessments are conducted, offering fast and consistent grading of handwritten and short answer responses.
