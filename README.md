@@ -64,12 +64,31 @@ To demonstrate the capabilities of our handwriting recognition and ASAG models, 
 - **Real-Time Feedback**: Instant results and feedback on handwriting recognition and grading.
   
 
-### Screenshots from the Website
+### Website Demo
+#### Admin Login
+![image](https://github.com/AmrSheta22/AutoGrader/assets/78879424/9d284032-c13f-464f-9e37-4680f1ef8b3c)
+
+#### Admin Registers Professors' Accounts
+![image](https://github.com/AmrSheta22/AutoGrader/assets/78879424/249a7a93-6227-4cf2-9d0d-103e8e449a59)
+
+#### Professors Login
+![image](https://github.com/AmrSheta22/AutoGrader/assets/78879424/7f97dc01-7b0a-4e07-bba8-1d0d599ded6d)
+
+#### Professors are Redirected to the Home Page
+![image](https://github.com/AmrSheta22/AutoGrader/assets/78879424/5f0582d0-0ead-445c-8c7e-476069734d70)
+
+#### Professors Grade by uploading Student Answer and Model Answer
+![image](https://github.com/AmrSheta22/AutoGrader/assets/78879424/d30c8341-1be0-4f69-9262-c4714d2eadd9)
+
+#### User Redirected to Grade Dashboard
 ![image](https://github.com/AmrSheta22/AutoGrader/assets/78879424/eb770b9f-28bb-4b70-bf63-2a642246aaf1)
 
 ![image](https://github.com/AmrSheta22/AutoGrader/assets/78879424/58a7adcf-dd84-40fb-8778-c072c803ef63)
 
 ![image](https://github.com/AmrSheta22/AutoGrader/assets/78879424/5c4f8dc9-badc-4708-82ce-9e34f56d2a37)
+
+#### Admins view of the dashboard
+![image](https://github.com/AmrSheta22/AutoGrader/assets/78879424/c439df1d-5d60-41ac-b399-f038ab27c134)
 
 
 ## Conclusion
