@@ -93,11 +93,11 @@ To demonstrate the capabilities of our handwriting recognition and ASAG models, 
 ## Files and Folder Structure
 The project is organized into the following directories and files:
 
-- data: Contains the datasets used for training and evaluation.
-- handwriting_recognition/data_collection: Scripts and tools for collecting handwriting samples.
-- notebooks: Jupyter notebooks for experiments, model training, and evaluation.
-- scr: Source code for the project, including models, preprocessing scripts, and utilities.
-- README.md: This file, providing an overview of the project.
+- **data**: Contains the datasets used for training and evaluation.
+- **handwriting_recognition/data_collection**: Scripts and tools for collecting handwriting samples.
+- **notebooks**: Python notebooks for experiments, model training, and evaluation.
+- **scr**: Source code for the project, including models, preprocessing scripts, and utilities.
+- **README.md**: This file, providing an overview of the project.
 
 ## Conclusion
 The development of advanced models for handwriting recognition and automatic short answer grading (ASAG) represents a significant step forward in educational technology. By meticulously collecting diverse datasets and employing sophisticated preprocessing techniques, our models achieve high accuracy and reliability. These models can revolutionize the way educational assessments are conducted, offering fast and consistent grading of handwritten and short answer responses.
