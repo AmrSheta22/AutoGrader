@@ -62,7 +62,7 @@ To demonstrate the capabilities of our handwriting recognition and ASAG models, 
 - **Submit Short Answers**: Users can submit short answers for automatic grading.
 - **Real-Time Feedback**: Instant results and feedback on handwriting recognition and grading.
 
-### Screenshots for the Website
+### Screenshots from the Website
 ![image](https://github.com/AmrSheta22/AutoGrader/assets/78879424/eb770b9f-28bb-4b70-bf63-2a642246aaf1)
 
 ![image](https://github.com/AmrSheta22/AutoGrader/assets/78879424/58a7adcf-dd84-40fb-8778-c072c803ef63)
