@@ -4,38 +4,71 @@
 
 Welcome to AutoGrader, a groundbreaking graduation project aimed at transforming traditional handwriting grading using Artificial Intelligence. This project, led by a team of 9 dedicated members, is divided into two main components: Handwriting Recognition and Automatic Grading. Each component has undergone extensive development to ensure accuracy, efficiency, and applicability in real-world scenarios.
 
+This project focuses on developing robust models for handwriting recognition and automatic short answer grading (ASAG). We utilize various datasets and advanced preprocessing techniques to enhance the quality of handwritten text recognition and grading models. The primary goal is to improve the accuracy and efficiency of recognizing and grading handwritten content in educational settings.
+
 ## Handwriting Recognition Component
+Handwriting recognition involves converting handwritten text into machine-readable text. Our approach includes multiple phases:
 
-### Data Preparation
+### Handwriting Recognition Phases
+1. **Data Collection**: 
+   - We collect data from a variety of datasets to ensure a diverse and comprehensive training set.
+2. **Image Pre-Processing**: 
+   - **Image Binarization**: Converts grayscale images to binary, enhancing feature extraction.
+   - **Noise Removal**: Eliminates unwanted artifacts to improve image clarity.
+   - **Dilation**: Enhances stroke width in handwritten images.
+   - **Deskewing**: Aligns handwritten text horizontally.
+   - **Deslanting**: Corrects the slant in handwritten text.
+   - **Rescaling**: Standardizes image dimensions.
+   - **Image Inversion**: Enhances feature contrast by inverting image colors (optional).
+3. **Evaluation Metrics**: 
+   - We utilize standard metrics to evaluate the performance of our handwriting recognition models.
+4. **Models Training**: 
+   - We train models using state-of-the-art techniques and diverse datasets.
+5. **Model Optimization**: 
+   - Fine-tuning models to enhance performance and accuracy.
+6. **Error Analysis**: 
+   - Identifying and analyzing common mistakes to improve model robustness.
 
-We meticulously prepared our data to meet the stringent requirements for efficient model training. The TrOCR and CRNN models emerged as potential options following a comprehensive analysis of available models and architectures.
+## Automatic Short Answer Grading (ASAG) Component
+ASAG involves grading handwritten or typed short answers automatically. Our approach includes multiple phases:
 
-### Model Training
+### ASAG Phases
+1. **Data Collection**: 
+   - Collecting a dataset of short answers.
+2. **Data Pre-Processing**: 
+   - Cleaning and preparing the text data for analysis.
+3. **Data Analysis**: 
+   - Extracting relevant features from the text and understanding patterns.
+4. **Model Training**: 
+   - Training models using supervised learning techniques.
+5. **Model Optimization**: 
+   - Adjusting model parameters to enhance grading accuracy.
+6. **Error Analysis**: 
+   - Conducting thorough error analysis to identify areas for improvement.
 
-The selected TrOCR model underwent training on both known and unknown datasets, with a primary focus on the IAM and EHD datasets. This critical step allowed us to evaluate its generalization performance using metrics such as Character Error Rate (CER) and Word Error Rate (WER).
+## Website and Demo
+To demonstrate the capabilities of our handwriting recognition and ASAG models, we have developed a user-friendly website. The website allows users to upload handwritten text and receive recognition results, as well as submit short answers for automatic grading. 
 
-### Model Optimization
+### Website Phases
+1. **Frontend**: 
+   - Designing a user-friendly interface for easy interaction.
+2. **Backend**: 
+   - Developing the server-side logic to handle data processing and model inference.
+3. **Computer Vision and Customizing Exam Sheets**: 
+   - Implementing computer vision techniques for recognizing handwritten text and customizing exam sheets.
 
-Through in-depth error analysis, the TrOCR model underwent strategic adjustments to address higher mistake rates. Optimization efforts yielded varying results; some datasets, especially those with more diversity, saw a significant decrease in errors, while others witnessed improvements despite lacking diversity. This underscores the complexity of optimizing model performance and emphasizes the importance of representative and diverse data for reliable outcomes.
+### Features
+- **Upload Handwritten Text**: Users can upload images of handwritten text for recognition.
+- **Submit Short Answers**: Users can submit short answers for automatic grading.
+- **Real-Time Feedback**: Instant results and feedback on handwriting recognition and grading.
 
-## Automatic Grading Component
+### Screenshots for the Website
+![image](https://github.com/AmrSheta22/AutoGrader/assets/78879424/eb770b9f-28bb-4b70-bf63-2a642246aaf1)
 
-### Dataset Compilation
+![image](https://github.com/AmrSheta22/AutoGrader/assets/78879424/58a7adcf-dd84-40fb-8778-c072c803ef63)
 
-We started the automatic grading component by carefully compiling relevant datasets from various reliable sources. These datasets included questions, student answers, model answers, and grades, forming the foundation for subsequent efforts.
+![image](https://github.com/AmrSheta22/AutoGrader/assets/78879424/5c4f8dc9-badc-4708-82ce-9e34f56d2a37)
 
-### Data Cleaning and Preprocessing
-
-Acquired data underwent thorough cleaning and preprocessing to ensure readiness for the next phases of the project.
-
-### Data Analysis
-
-Our analysis included both relational and univariate analyses, providing valuable insights guiding our subsequent actions.
-
-### Model Exploration
-
-In the following phase, we explored a diverse range of pre-trained models, including neural networks and mathematical models. A rigorous inspection and testing procedure was applied to each model using our data, aiming to identify a small number of excellent models that would serve as the foundation for the next stages of the project.
 
 ## Conclusion
-
-AutoGrader, developed by a team of 9 dedicated members, represents a significant step forward in automating the grading process, leveraging advanced AI techniques for both handwriting recognition and automatic grading. The careful consideration of data quality, model selection, and continuous optimization reflects our commitment to achieving reliable and efficient outcomes. We invite you to explore and contribute to the evolution of handwriting grading with AutoGrader.
+This project aims to enhance the accuracy and efficiency of handwriting recognition and automatic short answer grading. By leveraging diverse datasets and advanced preprocessing techniques, we strive to develop models that can significantly improve educational assessment processes.
