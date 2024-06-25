@@ -46,6 +46,7 @@ ASAG involves grading handwritten or typed short answers automatically. Our appr
 ### ASAG Phases
 1. **Data Collection**: 
    - Collecting datasets of short answers and including four columns (Question, Model Answer, Student Answer,and Grade).
+   - We used datasets like: Mohler, PT-ASAG, and AR-ASAG for training and testing.
 2. **Data Pre-Processing**: 
    - Cleaning and preparing the text data for analysis.
 3. **Data Analysis**: 
