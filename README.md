@@ -34,13 +34,14 @@ ASAG involves grading handwritten or typed short answers automatically. Our appr
 
 ### ASAG Phases
 1. **Data Collection**: 
-   - Collecting a dataset of short answers.
+   - Collecting datasets of short answers and including four columns (Question, Model Answer, Student Answer,and Grade).
 2. **Data Pre-Processing**: 
    - Cleaning and preparing the text data for analysis.
 3. **Data Analysis**: 
    - Extracting relevant features from the text and understanding patterns.
+   - Analysis was divided into two types: Single Column Analysis and Relations between Columns Analysis.
 4. **Model Training**: 
-   - Training models using supervised learning techniques.
+   - Trying different pre-trained models that utilizes Semantic Similarity for grading like Knowledge-based models, Sentence Transformers, and BERT.
 5. **Model Optimization**: 
    - Adjusting model parameters to enhance grading accuracy.
 6. **Error Analysis**: 
