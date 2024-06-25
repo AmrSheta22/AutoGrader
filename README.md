@@ -24,7 +24,7 @@ Handwriting recognition involves converting handwritten text into machine-readab
 3. **Evaluation Metrics**: 
    - We utilize standard metrics to evaluate the performance of our handwriting recognition models.
 4. **Models Training**: 
-   - We train models using state-of-the-art techniques and diverse datasets.
+   - We used a pre-trained model which is Tr-OCR for training.
 5. **Model Optimization**: 
    - Fine-tuning models to enhance performance and accuracy.
 6. **Error Analysis**: 
