@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">   
+    <title>Auto Grader</title>
+</head>
+<body>
+ <div class="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>Revolutionizing Classic Handwriting with AI </p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="{{ url_for('main_page') }}" class="link active">Home</a></li>
+                <li><a href="https://app.powerbi.com/groups/me/reports/beeb9d12-3427-468e-a606-c4a23c26c7e9/dae2c8fb381aed970298?experience=power-bi" class="link">Dashboard</a></li>
+                <li><a href="{{ url_for('main_page') }}#Features" class="link">Features</a></li>
+                <li><a href="{{ url_for('main_page') }}#howto" class="link">How to use it?</a></li>
+                <li><a href="{{ url_for('main_page') }}#TryitNow" class="link">Try Now</a></li>
+                <li><a href="{{ url_for('home') }}" class="link">Login</a></li>
+            </ul>
+
+        </div>
+        <!-----div class="nav-button">
+            <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+            <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div------>
+    </nav>
+
+<!----------------------------- Form box ----------------------------------->    
+<div class="form-box">
+    <form action="{{ url_for('register') }}" method="post">
+        <div class="login-container" id="login">
+            <div class="top">
+                <header>Create New Account</header>
+            </div>
+
+            <div class="input-box">
+                <input type="text" class="input-field" name="username" placeholder="Username" required>
+                <i class="bx bx-envelope"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="text" class="input-field" name="email" placeholder="Email" required>
+                <i class="bx bx-envelope"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" class="input-field" name="password" placeholder="Password" required>
+                <i class="bx bx-lock-alt"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="text" class="input-field" name="name" placeholder="Name" required>
+                <i class="bx bx-user"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="date" class="input-field" name="birthdate" placeholder="Birth Date" required>
+                <i class="bx bx-calendar"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="text" class="input-field" name="phone_number" placeholder="Phone Number" required>
+                <i class="bx bx-phone"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="text" class="input-field" name="education_degree" placeholder="Education Degree" required>
+                <i class="bx bx-user"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="submit" class="submit" value="Sign In">
+            </div>
+        </div>
+    </form>
+</div>
+    </form>
+</div>
+
+
+    
+
+</body>
+</html>

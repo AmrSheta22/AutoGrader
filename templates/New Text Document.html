@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />     <!-- Google Material Icons -->
+    <link rel="stylesheet" href="/static/styles2.css">
+    <title>Student Grade Dashboard</title>
+</head>
+<body>
+
+    <header>
+        <a href="https://github.com/AmrSheta22/AutoGrader/tree/main" class="logo" target="_blank">AutoGrader</a>
+        <nav class="navigation">
+            <a href="#GradeDashboard">The Grade:</a>
+            <a href="#answer-comparison">Answer Comparison</a>
+            <a href="/">Grade Another Question?</a>
+        </nav>
+    </header>
+ 
+
+<!-- done -->
+    <section class="mainsection" id="GradeDashboard">
+        <h2 class="title">Grade Dashboard</h2>
+        <strong class="example-title-number">
+            <span>Name: {{ dispstudentName }}</span>
+        </strong>
+        <strong class="example-title-number">
+            <span>ID: {{ dispstudentID }}</span>
+        </strong>
+        <strong class="example-title-number">
+            <span>Total Number Of Questions Are: {{ numquestions }}</span>
+        </strong>
+
+    </section>
+
+
+
+
+    <section class="dashboard">
+
+        <div class="grade-cards">
+        
+
+
+            <div class="individual-grade-card">
+                <h2 class="title">Question Number: 1</h2>
+                <div class="course-card">
+                    <h2>Current Grade is: {{ dispgrade1 }} out of 5.</h2>
+                    <div class="progress-bar" id="progress-bar1"></div>
+                </div>
+            </div>
+
+            <div class="individual-grade-card">
+                <h2 class="title">Question Number: 2</h2>
+                <div class="course-card">
+                    <h2>Current Grade is: {{ dispgrade2 }} out of 5.</h2>
+                    <div class="progress-bar" id="progress-bar2"></div>
+                </div>
+            </div>
+
+            <div class="individual-grade-card">
+                <h2 class="title">Question Number: 3</h2>
+                <div class="course-card">
+                    <h2>Current Grade is: {{ dispgrade3 }} out of 5.</h2>
+                    <div class="progress-bar" id="progress-bar3"></div>
+                </div>
+            </div>
+
+            <div class="individual-grade-card">
+                <h2 class="title">Question Number: 4</h2>
+                <div class="course-card">
+                    <h2>Current Grade is: {{ dispgrade4 }} out of 5.</h2>
+                    <div class="progress-bar" id="progress-bar4"></div>
+                </div>
+            </div>    
+
+            <div class="individual-grade-card">
+                <h2 class="title">Question Number: 5</h2>
+                <div class="course-card">
+                    <h2>Current Grade is: {{ dispgrade5 }} out of 5.</h2>
+                    <div class="progress-bar" id="progress-bar5"></div>
+                </div>
+            </div>    
+            
+
+            <div class="individual-grade-card">
+                <h2 class="title">Question Number: 6</h2>
+                <div class="course-card">
+                    <h2>Current Grade is: {{ dispgrade6 }} out of 5.</h2>
+                    <div class="progress-bar" id="progress-bar6"></div>
+                </div>
+            </div>    
+
+
+            <div class="individual-grade-card">
+                <h2 class="title">Question Number: 7</h2>
+                <div class="course-card">
+                    <h2>Current Grade is: {{ dispgrade7 }} out of 5.</h2>
+                    <div class="progress-bar" id="progress-bar7"></div>
+                </div>
+            </div>    
+
+
+
+            <div class="individual-grade-card">
+                <h2 class="title">Question Number: 8</h2>
+                <div class="course-card">
+                    <h2>Current Grade is: {{ dispgrade8 }} out of 5.</h2>
+                    <div class="progress-bar" id="progress-bar8"></div>
+                </div>
+            </div>    
+
+
+
+
+            <div class="individual-grade-card">
+                <h2 class="title">Question Number: 9</h2>
+                <div class="course-card">
+                    <h2>Current Grade is: {{ dispgrade9 }} out of 5.</h2>
+                    <div class="progress-bar" id="progress-bar9"></div>
+                </div>
+            </div>    
+
+                <!-- More grade cards will be added dynamically -->
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+<!-- هاو -->
+
+
+
+    <!-- Q1 Answer Check -->
+
+<div class="answer-comparison" id="answer-comparison">
+    <h2 class="title" >Q1: Answer Check</h2>
+
+    <div class="question">
+        <div class="answers">
+            <div class="student-answer">
+                <h4>Student Answer:</h4>
+                <p>{{ dispstudentans1 }}</p>
+            </div>
+            <div class="model-answer">
+                <h4>Model Answer:</h4>
+                <p>{{ dispmodelans1 }}</p>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- More questions and answers will be added dynamically -->
+
+</div>
+
+    <!-- Q2 Answer Check -->
+
+<div class="answer-comparison" id="answer-comparison">
+    <h2 class="title" >Q2: Answer Check</h2>
+
+    <div class="question">
+        <div class="answers">
+            <div class="student-answer">
+                <h4>Student Answer:</h4>
+                <p>{{ dispstudentans2 }}</p>
+            </div>
+            <div class="model-answer">
+                <h4>Model Answer:</h4>
+                <p>{{ dispmodelans2 }}</p>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- More questions and answers will be added dynamically -->
+
+</div>
+
+    <!-- Q3 Answer Check -->
+
+<div class="answer-comparison" id="answer-comparison">
+    <h2 class="title" >Q3: Answer Check</h2>
+
+    <div class="question">
+        <div class="answers">
+            <div class="student-answer">
+                <h4>Student Answer:</h4>
+                <p>{{ dispstudentans3 }}</p>
+            </div>
+            <div class="model-answer">
+                <h4>Model Answer:</h4>
+                <p>{{ dispmodelans3 }}</p>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- More questions and answers will be added dynamically -->
+
+</div>
+
+
+
+<!-- Q4 Answer Check -->
+
+<div class="answer-comparison" id="answer-comparison">
+    <h2 class="title" >Q4: Answer Check</h2>
+
+    <div class="question">
+        <div class="answers">
+            <div class="student-answer">
+                <h4>Student Answer:</h4>
+                <p>{{ dispstudentans4 }}</p>
+            </div>
+            <div class="model-answer">
+                <h4>Model Answer:</h4>
+                <p>{{ dispmodelans4 }}</p>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- More questions and answers will be added dynamically -->
+
+</div>
+
+
+
+<!-- Q5 Answer Check -->
+
+<div class="answer-comparison" id="answer-comparison">
+    <h2 class="title" >Q5: Answer Check</h2>
+
+    <div class="question">
+        <div class="answers">
+            <div class="student-answer">
+                <h4>Student Answer:</h4>
+                <p>{{ dispstudentans5 }}</p>
+            </div>
+            <div class="model-answer">
+                <h4>Model Answer:</h4>
+                <p>{{ dispmodelans5 }}</p>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- More questions and answers will be added dynamically -->
+
+</div>
+
+
+
+<!-- Q6 Answer Check -->
+
+<div class="answer-comparison" id="answer-comparison">
+    <h2 class="title" >Q6: Answer Check</h2>
+
+    <div class="question">
+        <div class="answers">
+            <div class="student-answer">
+                <h4>Student Answer:</h4>
+                <p>{{ dispstudentans6 }}</p>
+            </div>
+            <div class="model-answer">
+                <h4>Model Answer:</h4>
+                <p>{{ dispmodelans6 }}</p>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- More questions and answers will be added dynamically -->
+
+</div>
+
+
+
+<!-- Q7 Answer Check -->
+
+<div class="answer-comparison" id="answer-comparison">
+    <h2 class="title" >Q7: Answer Check</h2>
+
+    <div class="question">
+        <div class="answers">
+            <div class="student-answer">
+                <h4>Student Answer:</h4>
+                <p>{{ dispstudentans7 }}</p>
+            </div>
+            <div class="model-answer">
+                <h4>Model Answer:</h4>
+                <p>{{ dispmodelans7 }}</p>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- More questions and answers will be added dynamically -->
+
+</div>
+
+
+<!-- Q8 Answer Check -->
+
+<div class="answer-comparison" id="answer-comparison">
+    <h2 class="title" >Q8: Answer Check</h2>
+
+    <div class="question">
+        <div class="answers">
+            <div class="student-answer">
+                <h4>Student Answer:</h4>
+                <p>{{ dispstudentans8 }}</p>
+            </div>
+            <div class="model-answer">
+                <h4>Model Answer:</h4>
+                <p>{{ dispmodelans8 }}</p>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- More questions and answers will be added dynamically -->
+
+</div>
+
+
+<!-- Q9 Answer Check -->
+
+<div class="answer-comparison" id="answer-comparison">
+    <h2 class="title" >Q9: Answer Check</h2>
+
+    <div class="question">
+        <div class="answers">
+            <div class="student-answer">
+                <h4>Student Answer:</h4>
+                <p>{{ dispstudentans9 }}</p>
+            </div>
+            <div class="model-answer">
+                <h4>Model Answer:</h4>
+                <p>{{ dispmodelans9 }}</p>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- More questions and answers will be added dynamically -->
+
+</div>
+
+
+<!-- هاو -->
+<div class="areaofdownloadgrade-button">
+    <a class="downloadgrade-button" href="/download">Download The Grade</a>
+
+
+</div>
+
+
+
+
+    <!-- <div class="performance-insights">
+        <h2>Performance Insights</h2>
+        <div class="strengths">
+            <h3>Strengths</h3>
+            <ul>
+                <li>Algebra: Strong understanding of algebraic concepts.</li>
+                <li>Geometry: Solid grasp of geometric principles.</li>
+            </ul>
+        </div>
+        <div class="weaknesses">
+            <h3>Areas for Improvement</h3>
+            <ul>
+                <li>Calculus: Need to review calculus topics, particularly derivatives.</li>
+                <li>Trigonometry: Struggled with trigonometric functions and identities.</li>
+            </ul>
+        </div>
+    </div> -->
+
+    
+
+
+
+
+<!-- <div class="revision-resources">
+    <h2>Revision Resources</h2>
+    <div class="resource">
+        <h3>Topic 1: Algebra</h3>
+        <p>Explore Khan Academy's algebra tutorials to strengthen your understanding of algebraic concepts.</p>
+        <a href="https://www.khanacademy.org/math/algebra" target="_blank">Khan Academy - Algebra</a>
+    </div>
+    <div class="resource">
+        <h3>Topic 2: Geometry</h3>
+        <p>Check out Math Is Fun's geometry resources for interactive lessons and practice problems.</p>
+        <a href="https://www.mathsisfun.com/geometry/index.html" target="_blank">Math Is Fun - Geometry</a>
+    </div>
+   
+</div> -->
+
+
+
+
+    <!-- <script src="{{ url_for('static', filename='scripts2.js') }}"></script> -->
+
+
+<!-- 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Calculate grade percentage
+            var currentGrade = parseInt('{{ dispgrade }}'); // Example grade
+            console.log(currentGrade); // Log currentGrade to the console
+            var gradePercentage = (currentGrade / 5) * 100;
+
+            // Select the progress bar
+            var progressBar = document.getElementById("progress-bar2");
+
+            // Update progress bar width
+            progressBar.style.width = gradePercentage + "%";
+
+            // Determine color based on grade
+            if (currentGrade >= 4.0) {
+                progressBar.style.backgroundColor = "#4caf50"; // Green
+            } else if (currentGrade >= 3.0) {
+                progressBar.style.backgroundColor = "#ffc107"; // Yellow
+            } else {
+                progressBar.style.backgroundColor = "#f44336"; // Red
+            }
+        });
+    </script>  -->
+
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Function to update progress bar based on grade
+        function updateProgressBar(dispGrade, progressBarId) {
+            // Calculate grade percentage
+            var currentGrade = parseInt(dispGrade); // Example grade
+            console.log(currentGrade); // Log currentGrade to the console
+            var gradePercentage = (currentGrade / 5) * 100;
+
+            // Select the progress bar
+            var progressBar = document.getElementById(progressBarId);
+
+            // Update progress bar width
+            progressBar.style.width = gradePercentage + "%";
+
+            // Determine color based on grade
+            if (currentGrade >= 4.0) {
+                progressBar.style.backgroundColor = "#4caf50"; // Green
+            } else if (currentGrade >= 3.0) {
+                progressBar.style.backgroundColor = "#ffc107"; // Yellow
+                // stupid i know
+            } else if (currentGrade < 3.0) { 
+                progressBar.style.backgroundColor = "#f44336"; // Red
+            }
+        }
+
+        // Call the function for each grade and progress bar
+        updateProgressBar('{{ dispgrade1 }}', 'progress-bar1');
+        updateProgressBar('{{ dispgrade2 }}', 'progress-bar2');
+        updateProgressBar('{{ dispgrade3 }}', 'progress-bar3');
+        updateProgressBar('{{ dispgrade4 }}', 'progress-bar4');
+        updateProgressBar('{{ dispgrade5 }}', 'progress-bar5');
+        updateProgressBar('{{ dispgrade6 }}', 'progress-bar6');
+        updateProgressBar('{{ dispgrade7 }}', 'progress-bar7');
+        updateProgressBar('{{ dispgrade8 }}', 'progress-bar8');
+        updateProgressBar('{{ dispgrade9 }}', 'progress-bar9');
+    });
+</script>
+
+
+<footer class="footer">
+    <p class="footer-title">
+        <i class="fas fa-envelope"></i>
+        support@<span>AutoGrader.com</span></p>
+    <div class="social-icons">
+        <a href="https://github.com/AmrSheta22/AutoGrader/tree/main" target="_blank" ><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+</footer>
+
+    
+</body>
+</html>
